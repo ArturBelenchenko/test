@@ -1,0 +1,27 @@
+.form-group {
+    margin-bottom: 34px;
+}
+
+.form-control {
+    border: 1px solid $color-gray / 1.2;
+    border-radius: 3px;
+}
+
+.btn {
+    border-radius: 25px;
+    padding: 10px 55px;
+    font-size: $font-size;
+    font-weight: bold;
+}
+
+.btn-warning {
+    background-color: $color-yellow;
+}
+
+@media (max-width: 320px) {
+
+    .btn {
+        font-size: 0.715rem;
+        padding: 7px 25px;
+    }
+}

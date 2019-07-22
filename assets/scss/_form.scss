@@ -1,0 +1,11 @@
+.footer-form {
+    height: 100%;
+    background-color: $color-gray-light;
+    padding-top: 30px;
+
+    &__btn-wrapper {
+        display: flex;
+        justify-content: center;
+        padding-top: 24px;
+    }
+}

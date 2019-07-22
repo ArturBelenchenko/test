@@ -1,0 +1,52 @@
+.reviews {
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    justify-content: space-between;
+
+    &__title {
+        font-size: $font-size;
+    }
+
+    &__link {
+        @extend %font-size;
+        position: absolute;
+        left: 164px;
+
+        &:hover,
+        &:focus {
+            color: $color-green-light / 1.2;
+            transition: 0.2s linear;
+        }
+    }
+
+    &__like {
+        @extend %font-size;
+        position: absolute;
+        right: 48px;
+    }
+
+    &__speech {
+        @extend %font-size;
+    }
+
+    i {
+        color: $color-blue;
+        padding-right: 5px;
+        font-size: 0.825rem;
+        text-shadow: 0 1px 0 $color-gray;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .reviews {
+        margin-bottom: $gap;
+        flex-direction: column;
+
+        &__link,
+        &__like {
+            position: unset;
+        }
+    }
+}
